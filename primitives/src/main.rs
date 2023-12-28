@@ -91,6 +91,13 @@ fn main() {
 
     let transposed: Matrix = transpose(matrix);
     println!("Transposed Matrix:\n{}", transposed);
-    //2.3 Arrays and Slices
 
+    // 2.3 Arrays and Slices
+    // An array is a collection of objects of the same type T, stored in contiguous memory.
+
+    let arr:[i32, 5] = [1, 2, 3, 4, 5];
+    // All elements can be initialized to the same value.
+    let ys: [i32; 500] = [0; 500];
+
+    //TODO Readmore on slices https://doc.rust-lang.org/rust-by-example/primitives/array.html
 }
