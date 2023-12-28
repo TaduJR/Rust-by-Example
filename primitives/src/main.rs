@@ -1,3 +1,4 @@
+#[allow(unused_variables)]
 fn main() {
     /*
     Scalar Types
@@ -20,7 +21,6 @@ fn main() {
     ** let (without mut) indicates a run-time constant which means it can be initialized from the result of any valid expression but you can not re-assign it after it is first assigned.
     */
     let logical: bool = true;
-
     let a_float: f64 = 5.0;  // Regular annotation
     let an_integer   = 5i32; // Suffix annotation
     
@@ -53,7 +53,44 @@ fn main() {
         0.1f32, 0.2f64,
         'a', true);
     
-    et pair = (1, true);
+    let pair = (1, true);
     println!("Pair is {:?}", pair);
     println!("The reversed pair is {:?}", reverse(pair));
+
+    // Tuples can be destructed
+    let tuple = (1, "hello", 4.5, true);
+    let (a, b, c, d) = tuple;
+    println!("{:?}, {:?}, {:?}, {:?}", a, b, c, d);
+
+    //Activity 1
+    use std::fmt;
+    #[derive(Debug)]
+    struct Martix(f32, f32, f32, f32);
+
+    impl fmt::Display for Matrix {
+        fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+            writeln!(f, "( {} {} )\n( {} {} )", self.0, self.1, self.2, self.3)
+        }
+    }
+
+    let matrix = Matrix(1.1, 1.2, 2.1, 2.2);
+    println!("{}", matrix);
+
+    //Activity 2
+    fn reverse1(pair: (f32, f32)) -> (f32, f32) {
+        // `let` can be used to bind the members of a tuple to variables.
+        let (param1, param2) = pair;
+        (param2, param1)
+    }
+
+    fn transpose(matrix: Matrix) -> Matrix {
+        let (a, b): (f32, f32) = reverse1((matrix.2, matrix.0));
+        let (c, d): (f32, f32) = reverse1((matrix.3, matrix.1));
+        return Matrix(a, b, c, d);
+    }
+
+    let transposed: Matrix = transpose(matrix);
+    println!("Transposed Matrix:\n{}", transposed);
+    //2.3 Arrays and Slices
+
 }
