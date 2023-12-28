@@ -95,7 +95,7 @@ fn main() {
     // 2.3 Arrays and Slices
     // An array is a collection of objects of the same type T, stored in contiguous memory.
 
-    let arr:[i32, 5] = [1, 2, 3, 4, 5];
+    let xs: [i32; 5] = [1, 2, 3, 4, 5];
     // All elements can be initialized to the same value.
     let ys: [i32; 500] = [0; 500];
 
