@@ -3,5 +3,8 @@
 members = [
     "./hello_world",
     "./primitives",
-    "./custom_types"
+    "./custom_types",
+    "./variable_bindings",
+    "./types_"
+    "./conversion
 ]
