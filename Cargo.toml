@@ -5,6 +5,7 @@ members = [
     "./primitives",
     "./custom_types",
     "./variable_bindings",
-    "./types_"
-    "./conversion
+    "./types_",
+    "./conversion",
+    "./flow_of_control"
 ]
