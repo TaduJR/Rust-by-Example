@@ -7,5 +7,7 @@ members = [
     "./variable_bindings",
     "./types_",
     "./conversion",
-    "./flow_of_control"
+    "./flow_of_control",
+    "./functions",
+    "./modules_"
 ]
