@@ -10,5 +10,6 @@ members = [
     "./flow_of_control",
     "./functions",
     "./modules_",
-    "./crates"
+    "./crates",
+    "./attributes"
 ]
