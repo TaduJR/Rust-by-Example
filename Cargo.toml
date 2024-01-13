@@ -11,5 +11,6 @@ members = [
     "./functions",
     "./modules_",
     "./crates",
-    "./attributes"
+    "./attributes",
+    "./generics"
 ]
