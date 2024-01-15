@@ -78,4 +78,11 @@ fn main() {
     /* The newtype idiom gives compile time guarantees that the right type of value is supplied to a program. */
 
     //TODO Read more: Associated items and Phantom type parameters
+
+    let r;
+    {
+        let x = 5;
+        r = &x;
+    }
+    println!("r: {}", r);
 }

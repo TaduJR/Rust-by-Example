@@ -12,5 +12,6 @@ members = [
     "./modules_",
     "./crates",
     "./attributes",
-    "./generics"
+    "./generics",
+    "./scoping_rules"
 ]
